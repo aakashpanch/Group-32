@@ -129,25 +129,4 @@ def show_shortest_paths(graph: nx.DiGraph):
 # Function to display the graph without considering edge weights
 def show_graph_without_weights(nodes, edges):
     # Implement visualization logic here (not included for brevity)
-    graph = graphviz.Digraph()
-
-
-
-
-    #visual_dict = {
-       # "nodes": st.session_state["node_list_tree_found"],
-       # "edges": st.session_state["edge_list_tree_found"],
-    #}
-    #st.session_state["visual_dict"] = visual_dict
-    #visual_dict = st.session_state["graph_dict"]
-    nodes = st.session_state("node_list_tree_found")
-    edges = st.session_state("edge_list_tree_found")
-    for node in nodes:
-        node_name = node["name"]
-        graph.node(node_name, node_name)
-    for edge in edges:
-        source = edge["source"]
-        target = edge["target"]
-        relation = edge["type"]
-        graph.edge(source, target, relation)
-    st.graphviz_chart(graph)
+        pass
