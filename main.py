@@ -3,7 +3,7 @@ import uuid
 from Model import metamodel_dict
 import streamlit as st
 import json
-import graphviz
+#import graphviz
 from streamlit_agraph import agraph, Node, Edge, Config
 import networkx as nx
 from graph_functions import output_nodes_and_edges, count_nodes, count_edges
